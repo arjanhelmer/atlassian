@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Case study: How Alex Morgan built an enterprise design system unifying 12 products and reducing design debt by 60%.">
+  <title>Enterprise Design System — Alex Morgan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <div class="nav-overlay" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="logo" aria-label="Alex Morgan home">A<span>.</span>M</a>
+      <nav class="main-nav" aria-label="Primary">
+        <ul role="list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="case-studies.html">Case Studies</a></li>
+        </ul>
+        <button class="theme-toggle" type="button" aria-label="Switch to dark mode">
+          <span class="icon-sun" aria-hidden="true">&#9788;</span>
+          <span class="icon-moon" aria-hidden="true">&#9790;</span>
+        </button>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Open menu">
+          &#9776;
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Case Hero -->
+    <section class="case-hero">
+      <div class="container">
+        <a href="case-studies.html" class="card-link" style="margin-bottom: 1.5rem; display: inline-flex;">&larr; All Case Studies</a>
+        <h1>Enterprise Design System</h1>
+        <div class="case-meta">
+          <div class="case-meta-item">
+            <span class="case-meta-label">Company</span>
+            <span class="case-meta-value">Nexus Technologies</span>
+          </div>
+          <div class="case-meta-item">
+            <span class="case-meta-label">Role</span>
+            <span class="case-meta-value">Head of UX Design</span>
+          </div>
+          <div class="case-meta-item">
+            <span class="case-meta-label">Duration</span>
+            <span class="case-meta-value">18 months</span>
+          </div>
+          <div class="case-meta-item">
+            <span class="case-meta-label">Team</span>
+            <span class="case-meta-value">6 designers, 4 engineers</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <!-- Banner -->
+        <div class="case-banner" aria-hidden="true">
+          <svg viewBox="0 0 1200 514" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="1200" height="514" fill="var(--color-bg-card)"/>
+            <!-- Component grid -->
+            <rect x="80" y="60" width="240" height="160" rx="16" fill="var(--color-accent)" opacity="0.12"/>
+            <rect x="100" y="80" width="200" height="24" rx="6" fill="var(--color-accent)" opacity="0.25"/>
+            <rect x="100" y="120" width="160" height="16" rx="4" fill="var(--color-accent)" opacity="0.15"/>
+            <rect x="100" y="150" width="120" height="40" rx="8" fill="var(--color-accent)" opacity="0.3"/>
+            <rect x="360" y="60" width="240" height="160" rx="16" fill="var(--color-accent)" opacity="0.1"/>
+            <circle cx="480" cy="140" r="40" fill="var(--color-accent)" opacity="0.2"/>
+            <rect x="640" y="60" width="240" height="160" rx="16" fill="var(--color-accent)" opacity="0.08"/>
+            <rect x="660" y="80" width="200" height="120" rx="8" fill="var(--color-accent)" opacity="0.12"/>
+            <rect x="920" y="60" width="200" height="160" rx="16" fill="var(--color-accent)" opacity="0.06"/>
+            <!-- Bottom row -->
+            <rect x="80" y="260" width="500" height="200" rx="16" fill="var(--color-accent)" opacity="0.08"/>
+            <rect x="620" y="260" width="500" height="200" rx="16" fill="var(--color-accent)" opacity="0.06"/>
+            <rect x="100" y="280" width="120" height="20" rx="4" fill="var(--color-accent)" opacity="0.2"/>
+            <rect x="100" y="320" width="440" height="12" rx="3" fill="var(--color-accent)" opacity="0.1"/>
+            <rect x="100" y="345" width="380" height="12" rx="3" fill="var(--color-accent)" opacity="0.1"/>
+            <rect x="100" y="380" width="140" height="40" rx="8" fill="var(--color-accent)" opacity="0.25"/>
+            <rect x="260" y="380" width="140" height="40" rx="8" fill="var(--color-accent)" opacity="0.15"/>
+          </svg>
+        </div>
+
+        <div class="case-content">
+          <h2>The Challenge</h2>
+          <p>Nexus Technologies had grown through acquisition, resulting in 12 separate products with inconsistent user experiences. Each product team had its own design patterns, component libraries, and visual language. Users who worked across multiple tools struggled with the cognitive load of relearning interfaces.</p>
+          <p>The engineering teams were also feeling the pain — duplicate component code across repositories meant bugs were fixed in one place but persisted in others, and new features took longer to build.</p>
+
+          <h2>My Approach</h2>
+          <p>I structured the initiative into three phases to build momentum while managing organisational change:</p>
+          <ul>
+            <li><strong>Audit &amp; Align (months 1–3):</strong> Conducted a comprehensive UI audit across all 12 products, cataloguing over 340 unique components. Facilitated workshops with product, engineering, and design leads to define shared principles and priorities.</li>
+            <li><strong>Foundation &amp; Pilot (months 4–9):</strong> Established design tokens (colour, typography, spacing, motion), built a core component library of 48 components, and piloted adoption in two products to validate the system.</li>
+            <li><strong>Scale &amp; Govern (months 10–18):</strong> Rolled the system out across all products, created contribution guidelines, and established a governance model with rotating product team representation.</li>
+          </ul>
+
+          <!-- Process image -->
+          <div class="case-image-full" aria-hidden="true">
+            <svg viewBox="0 0 900 506" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="900" height="506" fill="var(--color-bg-card)"/>
+              <!-- Process flow -->
+              <rect x="60" y="200" width="160" height="100" rx="12" fill="var(--color-accent)" opacity="0.2"/>
+              <text x="140" y="255" fill="var(--color-accent)" font-size="14" text-anchor="middle" opacity="0.6">Audit</text>
+              <rect x="270" y="200" width="160" height="100" rx="12" fill="var(--color-accent)" opacity="0.25"/>
+              <text x="350" y="255" fill="var(--color-accent)" font-size="14" text-anchor="middle" opacity="0.6">Build</text>
+              <rect x="480" y="200" width="160" height="100" rx="12" fill="var(--color-accent)" opacity="0.3"/>
+              <text x="560" y="255" fill="var(--color-accent)" font-size="14" text-anchor="middle" opacity="0.6">Pilot</text>
+              <rect x="690" y="200" width="160" height="100" rx="12" fill="var(--color-accent)" opacity="0.35"/>
+              <text x="770" y="255" fill="var(--color-accent)" font-size="14" text-anchor="middle" opacity="0.6">Scale</text>
+              <!-- Arrows -->
+              <line x1="220" y1="250" x2="270" y2="250" stroke="var(--color-accent)" stroke-width="2" opacity="0.3"/>
+              <line x1="430" y1="250" x2="480" y2="250" stroke="var(--color-accent)" stroke-width="2" opacity="0.3"/>
+              <line x1="640" y1="250" x2="690" y2="250" stroke="var(--color-accent)" stroke-width="2" opacity="0.3"/>
+            </svg>
+          </div>
+
+          <h2>Key Decisions</h2>
+          <p>Several critical decisions shaped the project's success:</p>
+          <ul>
+            <li><strong>Federated ownership:</strong> Rather than centralising the system under one team, I created a federated model where product teams contributed components. This built buy-in and reduced bottlenecks.</li>
+            <li><strong>Accessibility-first:</strong> Every component was built to WCAG 2.1 AA from day one. We automated accessibility testing in CI/CD to prevent regressions.</li>
+            <li><strong>Design tokens as source of truth:</strong> All visual decisions flowed from tokens, making theme support (including dark mode) a natural capability rather than a retrofit.</li>
+          </ul>
+
+          <h2>Results</h2>
+          <div class="case-results">
+            <div class="result-card">
+              <span class="result-number">60%</span>
+              <span class="result-label">Reduction in design debt</span>
+            </div>
+            <div class="result-card">
+              <span class="result-number">40%</span>
+              <span class="result-label">Faster feature delivery</span>
+            </div>
+            <div class="result-card">
+              <span class="result-number">340→48</span>
+              <span class="result-label">Components consolidated</span>
+            </div>
+            <div class="result-card">
+              <span class="result-number">92%</span>
+              <span class="result-label">Team adoption rate</span>
+            </div>
+          </div>
+
+          <h2>Reflection</h2>
+          <p>The biggest lesson was that a design system is 20% components and 80% culture. The technical artefacts were the easy part — the real challenge was changing how teams thought about shared ownership, contribution, and consistency. Early investment in workshops, documentation, and visible executive sponsorship was essential.</p>
+
+          <!-- Navigation -->
+          <nav class="case-nav" aria-label="Case study navigation">
+            <span></span>
+            <a href="case-study-2.html">Next: HealthTrack Patient Portal &rarr;</a>
+          </nav>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <span class="footer-copy">&copy; 2026 Alex Morgan. All rights reserved.</span>
+        <ul class="footer-links" role="list">
+          <li><a href="https://linkedin.com" aria-label="LinkedIn (opens in new tab)" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+          <li><a href="https://dribbble.com" aria-label="Dribbble (opens in new tab)" target="_blank" rel="noopener noreferrer">Dribbble</a></li>
+          <li><a href="mailto:hello@alexmorgan.design">Email</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

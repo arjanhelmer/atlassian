@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Case study: How Alex Morgan led the PayFlow dashboard redesign, cutting task completion time by 45%.">
+  <title>PayFlow Dashboard Redesign — Alex Morgan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <div class="nav-overlay" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="logo" aria-label="Alex Morgan home">A<span>.</span>M</a>
+      <nav class="main-nav" aria-label="Primary">
+        <ul role="list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="case-studies.html">Case Studies</a></li>
+        </ul>
+        <button class="theme-toggle" type="button" aria-label="Switch to dark mode">
+          <span class="icon-sun" aria-hidden="true">&#9788;</span>
+          <span class="icon-moon" aria-hidden="true">&#9790;</span>
+        </button>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Open menu">
+          &#9776;
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Case Hero -->
+    <section class="case-hero">
+      <div class="container">
+        <a href="case-studies.html" class="card-link" style="margin-bottom: 1.5rem; display: inline-flex;">&larr; All Case Studies</a>
+        <h1>PayFlow Dashboard Redesign</h1>
+        <div class="case-meta">
+          <div class="case-meta-item">
+            <span class="case-meta-label">Company</span>
+            <span class="case-meta-value">PayFlow</span>
+          </div>
+          <div class="case-meta-item">
+            <span class="case-meta-label">Role</span>
+            <span class="case-meta-value">UX Design Lead</span>
+          </div>
+          <div class="case-meta-item">
+            <span class="case-meta-label">Duration</span>
+            <span class="case-meta-value">10 months</span>
+          </div>
+          <div class="case-meta-item">
+            <span class="case-meta-label">Team</span>
+            <span class="case-meta-value">4 designers, 8 engineers</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <!-- Banner -->
+        <div class="case-banner" aria-hidden="true">
+          <svg viewBox="0 0 1200 514" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="1200" height="514" fill="var(--color-bg-card)"/>
+            <!-- Dashboard mockup -->
+            <rect x="100" y="50" width="1000" height="420" rx="16" fill="var(--color-accent)" opacity="0.06" stroke="var(--color-accent)" stroke-width="1" stroke-opacity="0.15"/>
+            <!-- Sidebar -->
+            <rect x="100" y="50" width="220" height="420" rx="16" fill="var(--color-accent)" opacity="0.08"/>
+            <rect x="130" y="90" width="100" height="16" rx="4" fill="var(--color-accent)" opacity="0.25"/>
+            <rect x="130" y="130" width="160" height="12" rx="3" fill="var(--color-accent)" opacity="0.15"/>
+            <rect x="130" y="160" width="160" height="12" rx="3" fill="var(--color-accent)" opacity="0.12"/>
+            <rect x="130" y="190" width="160" height="12" rx="3" fill="var(--color-accent)" opacity="0.12"/>
+            <rect x="130" y="220" width="160" height="12" rx="3" fill="var(--color-accent)" opacity="0.12"/>
+            <rect x="130" y="250" width="160" height="12" rx="3" fill="var(--color-accent)" opacity="0.12"/>
+            <!-- Main content -->
+            <rect x="360" y="90" width="200" height="120" rx="12" fill="var(--color-accent)" opacity="0.12"/>
+            <rect x="580" y="90" width="200" height="120" rx="12" fill="var(--color-accent)" opacity="0.1"/>
+            <rect x="800" y="90" width="260" height="120" rx="12" fill="var(--color-accent)" opacity="0.08"/>
+            <!-- Chart area -->
+            <rect x="360" y="240" width="700" height="200" rx="12" fill="var(--color-accent)" opacity="0.06"/>
+            <polyline points="400,400 500,360 600,380 700,320 800,340 900,280 1000,300" stroke="var(--color-accent)" stroke-width="2.5" fill="none" opacity="0.35"/>
+            <!-- Stat numbers -->
+            <rect x="380" y="110" width="80" height="24" rx="4" fill="var(--color-accent)" opacity="0.3"/>
+            <rect x="600" y="110" width="80" height="24" rx="4" fill="var(--color-accent)" opacity="0.25"/>
+            <rect x="820" y="110" width="80" height="24" rx="4" fill="var(--color-accent)" opacity="0.2"/>
+          </svg>
+        </div>
+
+        <div class="case-content">
+          <h2>The Challenge</h2>
+          <p>PayFlow's merchant dashboard was the primary tool for over 50,000 businesses to manage payments, view transaction data, and handle disputes. But the dashboard had grown organically over five years, accumulating features without a cohesive information architecture. Merchants reported that simple tasks — like finding a specific transaction or initiating a refund — took too many clicks and too much cognitive effort.</p>
+          <p>Customer support tickets related to "can't find" and "how do I" queries made up 38% of all inbound volume.</p>
+
+          <h2>Research &amp; Discovery</h2>
+          <p>I led a mixed-methods research initiative to understand merchant workflows:</p>
+          <ul>
+            <li><strong>Task analysis</strong> with 18 merchants across small, medium, and enterprise segments to map the top 10 critical workflows</li>
+            <li><strong>Card sorting</strong> with 40 participants to validate a new information architecture</li>
+            <li><strong>Heuristic evaluation</strong> against Nielsen's 10 usability heuristics, revealing major issues in visibility of system status and error prevention</li>
+            <li><strong>Competitive analysis</strong> of 6 competing payment platforms to identify opportunities for differentiation</li>
+          </ul>
+
+          <!-- IA diagram -->
+          <div class="case-image-full" aria-hidden="true">
+            <svg viewBox="0 0 900 506" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="900" height="506" fill="var(--color-bg-card)"/>
+              <!-- IA Tree -->
+              <rect x="350" y="60" width="200" height="50" rx="8" fill="var(--color-accent)" opacity="0.25"/>
+              <text x="450" y="90" fill="var(--color-accent)" font-size="13" text-anchor="middle" opacity="0.5">Dashboard</text>
+              <!-- Level 2 -->
+              <rect x="80" y="170" width="150" height="40" rx="6" fill="var(--color-accent)" opacity="0.18"/>
+              <rect x="280" y="170" width="150" height="40" rx="6" fill="var(--color-accent)" opacity="0.18"/>
+              <rect x="480" y="170" width="150" height="40" rx="6" fill="var(--color-accent)" opacity="0.18"/>
+              <rect x="680" y="170" width="150" height="40" rx="6" fill="var(--color-accent)" opacity="0.18"/>
+              <!-- Connectors -->
+              <line x1="450" y1="110" x2="155" y2="170" stroke="var(--color-accent)" stroke-width="1.5" opacity="0.2"/>
+              <line x1="450" y1="110" x2="355" y2="170" stroke="var(--color-accent)" stroke-width="1.5" opacity="0.2"/>
+              <line x1="450" y1="110" x2="555" y2="170" stroke="var(--color-accent)" stroke-width="1.5" opacity="0.2"/>
+              <line x1="450" y1="110" x2="755" y2="170" stroke="var(--color-accent)" stroke-width="1.5" opacity="0.2"/>
+              <!-- Level 3 -->
+              <rect x="50" y="270" width="100" height="30" rx="4" fill="var(--color-accent)" opacity="0.1"/>
+              <rect x="170" y="270" width="100" height="30" rx="4" fill="var(--color-accent)" opacity="0.1"/>
+              <rect x="300" y="270" width="100" height="30" rx="4" fill="var(--color-accent)" opacity="0.1"/>
+              <rect x="500" y="270" width="100" height="30" rx="4" fill="var(--color-accent)" opacity="0.1"/>
+              <rect x="620" y="270" width="100" height="30" rx="4" fill="var(--color-accent)" opacity="0.1"/>
+              <rect x="700" y="270" width="100" height="30" rx="4" fill="var(--color-accent)" opacity="0.1"/>
+              <!-- L2→L3 connectors -->
+              <line x1="155" y1="210" x2="100" y2="270" stroke="var(--color-accent)" stroke-width="1" opacity="0.15"/>
+              <line x1="155" y1="210" x2="220" y2="270" stroke="var(--color-accent)" stroke-width="1" opacity="0.15"/>
+              <line x1="355" y1="210" x2="350" y2="270" stroke="var(--color-accent)" stroke-width="1" opacity="0.15"/>
+              <line x1="555" y1="210" x2="550" y2="270" stroke="var(--color-accent)" stroke-width="1" opacity="0.15"/>
+              <line x1="755" y1="210" x2="670" y2="270" stroke="var(--color-accent)" stroke-width="1" opacity="0.15"/>
+              <line x1="755" y1="210" x2="750" y2="270" stroke="var(--color-accent)" stroke-width="1" opacity="0.15"/>
+            </svg>
+          </div>
+
+          <h2>Design Solutions</h2>
+          <p>The redesign focused on three pillars:</p>
+          <ul>
+            <li><strong>Contextual navigation:</strong> Replaced the monolithic sidebar with a role-based navigation that surfaced relevant tools based on merchant type and recent activity</li>
+            <li><strong>Universal search:</strong> Introduced a command-palette-style search that allowed merchants to find transactions, customers, and actions from anywhere in the dashboard</li>
+            <li><strong>Actionable overview:</strong> Redesigned the home view as a personalised dashboard showing key metrics, pending actions, and anomaly alerts — not just raw data</li>
+          </ul>
+
+          <h2>Results</h2>
+          <div class="case-results">
+            <div class="result-card">
+              <span class="result-number">45%</span>
+              <span class="result-label">Faster task completion</span>
+            </div>
+            <div class="result-card">
+              <span class="result-number">-52%</span>
+              <span class="result-label">"How do I" support tickets</span>
+            </div>
+            <div class="result-card">
+              <span class="result-number">+28</span>
+              <span class="result-label">NPS point increase</span>
+            </div>
+            <div class="result-card">
+              <span class="result-number">89%</span>
+              <span class="result-label">Merchant satisfaction</span>
+            </div>
+          </div>
+
+          <h2>Reflection</h2>
+          <p>This project taught me the power of progressive disclosure in complex tools. Merchants didn't need fewer features — they needed the right features at the right time. The universal search became the most-loved feature, with 68% of active users adopting it within the first month. It proved that investing in navigational infrastructure can be more impactful than adding new capabilities.</p>
+
+          <!-- Navigation -->
+          <nav class="case-nav" aria-label="Case study navigation">
+            <a href="case-study-2.html">&larr; Previous: HealthTrack Patient Portal</a>
+            <span></span>
+          </nav>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <span class="footer-copy">&copy; 2026 Alex Morgan. All rights reserved.</span>
+        <ul class="footer-links" role="list">
+          <li><a href="https://linkedin.com" aria-label="LinkedIn (opens in new tab)" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+          <li><a href="https://dribbble.com" aria-label="Dribbble (opens in new tab)" target="_blank" rel="noopener noreferrer">Dribbble</a></li>
+          <li><a href="mailto:hello@alexmorgan.design">Email</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

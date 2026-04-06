@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Alex Morgan — UX Design Lead specialising in human-centred design, design systems, and product strategy.">
+  <title>Alex Morgan — UX Design Lead</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <div class="nav-overlay" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="logo" aria-label="Alex Morgan home">A<span>.</span>M</a>
+      <nav class="main-nav" aria-label="Primary">
+        <ul role="list">
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="case-studies.html">Case Studies</a></li>
+        </ul>
+        <button class="theme-toggle" type="button" aria-label="Switch to dark mode">
+          <span class="icon-sun" aria-hidden="true">&#9788;</span>
+          <span class="icon-moon" aria-hidden="true">&#9790;</span>
+        </button>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-list" aria-label="Open menu">
+          &#9776;
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <span class="hero-label">UX Design Lead</span>
+          <h1>Designing experiences that put people first</h1>
+          <p>I lead design teams to create thoughtful, accessible, and impactful digital products. Over 12 years of shaping user experiences across enterprise, fintech, and healthcare.</p>
+          <div class="btn-group">
+            <a href="case-studies.html" class="btn btn-primary">View Case Studies</a>
+            <a href="about.html" class="btn btn-secondary">About Me</a>
+          </div>
+        </div>
+        <div class="hero-graphic" aria-hidden="true">
+          <svg viewBox="0 0 480 400" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Abstract decorative shapes">
+            <rect x="40" y="60" width="200" height="200" rx="40" fill="var(--color-accent)" opacity="0.15" transform="rotate(12 140 160)"/>
+            <circle cx="320" cy="120" r="80" fill="var(--color-accent)" opacity="0.2"/>
+            <rect x="220" y="200" width="180" height="140" rx="28" fill="var(--color-accent)" opacity="0.1" transform="rotate(-6 310 270)"/>
+            <circle cx="160" cy="320" r="50" fill="var(--color-accent)" opacity="0.25"/>
+            <rect x="80" y="140" width="120" height="120" rx="24" fill="var(--color-accent)" opacity="0.08"/>
+            <circle cx="380" cy="300" r="60" fill="var(--color-accent)" opacity="0.12"/>
+            <line x1="100" y1="80" x2="360" y2="320" stroke="var(--color-accent)" stroke-width="2" opacity="0.15"/>
+            <line x1="200" y1="40" x2="400" y2="200" stroke="var(--color-accent)" stroke-width="1.5" opacity="0.1"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="section" aria-label="Key statistics">
+      <div class="container">
+        <div class="stats">
+          <div class="stat">
+            <span class="stat-number">12+</span>
+            <span class="stat-label">Years in UX Design</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">40+</span>
+            <span class="stat-label">Products Shipped</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">8</span>
+            <span class="stat-label">Design Teams Led</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">3M+</span>
+            <span class="stat-label">Users Impacted</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Work -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Featured Work</h2>
+          <p>A selection of projects where design leadership drove measurable outcomes.</p>
+        </div>
+        <div class="card-grid">
+          <!-- Case Study 1 -->
+          <article class="card">
+            <div class="card-image" aria-hidden="true">
+              <svg viewBox="0 0 560 350" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="560" height="350" fill="var(--color-bg-card)"/>
+                <rect x="60" y="50" width="200" height="130" rx="16" fill="var(--color-accent)" opacity="0.2"/>
+                <rect x="300" y="80" width="200" height="100" rx="16" fill="var(--color-accent)" opacity="0.12"/>
+                <circle cx="160" cy="250" r="50" fill="var(--color-accent)" opacity="0.18"/>
+                <rect x="280" y="220" width="180" height="80" rx="12" fill="var(--color-accent)" opacity="0.15"/>
+                <line x1="60" y1="300" x2="500" y2="300" stroke="var(--color-border)" stroke-width="1"/>
+              </svg>
+            </div>
+            <div class="card-body">
+              <span class="card-tag">Design System</span>
+              <h3>Enterprise Design System</h3>
+              <p>Unified a fragmented product suite of 12 applications under one cohesive design system, reducing design debt by 60%.</p>
+              <a href="case-study-1.html" class="card-link">Read case study <span class="arrow" aria-hidden="true">&rarr;</span></a>
+            </div>
+          </article>
+
+          <!-- Case Study 2 -->
+          <article class="card">
+            <div class="card-image" aria-hidden="true">
+              <svg viewBox="0 0 560 350" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="560" height="350" fill="var(--color-bg-card)"/>
+                <circle cx="280" cy="140" r="90" fill="var(--color-accent)" opacity="0.15"/>
+                <circle cx="280" cy="140" r="50" fill="var(--color-accent)" opacity="0.1"/>
+                <rect x="100" y="240" width="360" height="60" rx="12" fill="var(--color-accent)" opacity="0.12"/>
+                <rect x="140" y="260" width="80" height="20" rx="4" fill="var(--color-accent)" opacity="0.25"/>
+                <rect x="240" y="260" width="80" height="20" rx="4" fill="var(--color-accent)" opacity="0.25"/>
+                <rect x="340" y="260" width="80" height="20" rx="4" fill="var(--color-accent)" opacity="0.25"/>
+              </svg>
+            </div>
+            <div class="card-body">
+              <span class="card-tag">Mobile App</span>
+              <h3>HealthTrack Patient Portal</h3>
+              <p>Redesigned the patient-facing mobile experience, increasing appointment completion rates by 34%.</p>
+              <a href="case-study-2.html" class="card-link">Read case study <span class="arrow" aria-hidden="true">&rarr;</span></a>
+            </div>
+          </article>
+
+          <!-- Case Study 3 -->
+          <article class="card">
+            <div class="card-image" aria-hidden="true">
+              <svg viewBox="0 0 560 350" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="560" height="350" fill="var(--color-bg-card)"/>
+                <rect x="80" y="60" width="160" height="230" rx="20" fill="var(--color-accent)" opacity="0.12"/>
+                <rect x="100" y="100" width="120" height="20" rx="4" fill="var(--color-accent)" opacity="0.2"/>
+                <rect x="100" y="140" width="100" height="20" rx="4" fill="var(--color-accent)" opacity="0.15"/>
+                <rect x="100" y="180" width="120" height="60" rx="8" fill="var(--color-accent)" opacity="0.1"/>
+                <rect x="300" y="80" width="180" height="190" rx="20" fill="var(--color-accent)" opacity="0.08"/>
+                <circle cx="390" cy="175" r="50" fill="var(--color-accent)" opacity="0.15"/>
+              </svg>
+            </div>
+            <div class="card-body">
+              <span class="card-tag">Fintech</span>
+              <h3>PayFlow Dashboard Redesign</h3>
+              <p>Led the end-to-end redesign of a financial dashboard, cutting task completion time by 45%.</p>
+              <a href="case-study-3.html" class="card-link">Read case study <span class="arrow" aria-hidden="true">&rarr;</span></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section">
+      <div class="container">
+        <div class="cta">
+          <h2>Let's work together</h2>
+          <p>I'm open to design leadership roles, advisory engagements, and speaking opportunities.</p>
+          <a href="mailto:hello@alexmorgan.design" class="btn btn-primary">Get in Touch</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <span class="footer-copy">&copy; 2026 Alex Morgan. All rights reserved.</span>
+        <ul class="footer-links" role="list">
+          <li><a href="https://linkedin.com" aria-label="LinkedIn (opens in new tab)" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+          <li><a href="https://dribbble.com" aria-label="Dribbble (opens in new tab)" target="_blank" rel="noopener noreferrer">Dribbble</a></li>
+          <li><a href="mailto:hello@alexmorgan.design">Email</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
