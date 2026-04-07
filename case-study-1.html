@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Case study: How Arjan Helmer is redesigning the navigation experience across all Atlassian apps as part of the System of Work initiative.">
-  <title>Atlassian System of Work — Arjan Helmer</title>
+  <meta name="description" content="Case study: How Arjan Helmer helped redesign the navigation experience across all Atlassian products, improving the experience for millions of users.">
+  <title>Atlassian Navigation Redesign — Arjan Helmer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -40,7 +40,7 @@
     <section class="case-hero">
       <div class="container">
         <a href="case-studies.html" class="card-link" style="margin-bottom: 1.5rem; display: inline-flex;">&larr; All Case Studies</a>
-        <h1>Atlassian System of Work</h1>
+        <h1>Designing Atlassian's New Navigation</h1>
         <div class="case-meta">
           <div class="case-meta-item">
             <span class="case-meta-label">Company</span>
@@ -51,12 +51,12 @@
             <span class="case-meta-value">Lead Designer</span>
           </div>
           <div class="case-meta-item">
-            <span class="case-meta-label">Duration</span>
-            <span class="case-meta-value">Apr 2024 – Present</span>
+            <span class="case-meta-label">Launch</span>
+            <span class="case-meta-value">October 2024 (EAP)</span>
           </div>
           <div class="case-meta-item">
             <span class="case-meta-label">Scope</span>
-            <span class="case-meta-value">All Atlassian products</span>
+            <span class="case-meta-value">6 Atlassian products</span>
           </div>
         </div>
       </div>
@@ -64,94 +64,185 @@
 
     <section class="section">
       <div class="container">
-        <!-- Banner -->
+        <!-- Banner: Before/After nav -->
         <div class="case-banner" aria-hidden="true">
           <svg viewBox="0 0 1200 514" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect width="1200" height="514" fill="var(--color-bg-card)"/>
-            <!-- Multi-app navigation concept -->
-            <rect x="80" y="60" width="1040" height="400" rx="16" fill="var(--color-accent)" opacity="0.04" stroke="var(--color-accent)" stroke-width="1" stroke-opacity="0.12"/>
-            <!-- Left nav -->
-            <rect x="80" y="60" width="200" height="400" rx="16" fill="var(--color-accent)" opacity="0.08"/>
-            <!-- App icons -->
-            <circle cx="130" cy="120" r="20" fill="var(--color-accent)" opacity="0.25"/>
-            <circle cx="180" cy="120" r="20" fill="var(--color-accent)" opacity="0.18"/>
-            <circle cx="230" cy="120" r="20" fill="var(--color-accent)" opacity="0.12"/>
+            <!-- Before: Top nav pattern -->
+            <text x="300" y="40" fill="var(--color-accent)" font-size="14" text-anchor="middle" opacity="0.4">Before</text>
+            <rect x="60" y="56" width="480" height="400" rx="12" fill="var(--color-accent)" opacity="0.04" stroke="var(--color-accent)" stroke-width="1" stroke-opacity="0.1"/>
+            <!-- Top bar -->
+            <rect x="60" y="56" width="480" height="48" rx="12" fill="var(--color-accent)" opacity="0.1"/>
+            <circle cx="92" cy="80" r="14" fill="var(--color-accent)" opacity="0.2"/>
+            <rect x="120" y="73" width="60" height="10" rx="3" fill="var(--color-accent)" opacity="0.15"/>
+            <rect x="195" y="73" width="50" height="10" rx="3" fill="var(--color-accent)" opacity="0.15"/>
+            <rect x="260" y="73" width="55" height="10" rx="3" fill="var(--color-accent)" opacity="0.15"/>
+            <rect x="330" y="73" width="45" height="10" rx="3" fill="var(--color-accent)" opacity="0.15"/>
+            <!-- Scattered content -->
+            <rect x="80" y="124" width="200" height="100" rx="8" fill="var(--color-accent)" opacity="0.06"/>
+            <rect x="300" y="124" width="220" height="100" rx="8" fill="var(--color-accent)" opacity="0.06"/>
+            <rect x="80" y="244" width="440" height="80" rx="8" fill="var(--color-accent)" opacity="0.04"/>
+            <rect x="80" y="344" width="440" height="90" rx="8" fill="var(--color-accent)" opacity="0.04"/>
+
+            <!-- After: Sidebar nav pattern -->
+            <text x="900" y="40" fill="var(--color-accent)" font-size="14" text-anchor="middle" opacity="0.4">After</text>
+            <rect x="660" y="56" width="480" height="400" rx="12" fill="var(--color-accent)" opacity="0.04" stroke="var(--color-accent)" stroke-width="1" stroke-opacity="0.1"/>
+            <!-- Sidebar -->
+            <rect x="660" y="56" width="160" height="400" rx="12" fill="var(--color-accent)" opacity="0.08"/>
+            <!-- App switcher icons -->
+            <circle cx="692" cy="90" r="12" fill="var(--color-accent)" opacity="0.25"/>
+            <circle cx="724" cy="90" r="12" fill="var(--color-accent)" opacity="0.18"/>
+            <circle cx="756" cy="90" r="12" fill="var(--color-accent)" opacity="0.12"/>
             <!-- Nav items -->
-            <rect x="110" y="170" width="140" height="14" rx="4" fill="var(--color-accent)" opacity="0.2"/>
-            <rect x="110" y="200" width="120" height="14" rx="4" fill="var(--color-accent)" opacity="0.15"/>
-            <rect x="110" y="230" width="140" height="14" rx="4" fill="var(--color-accent)" opacity="0.12"/>
-            <rect x="110" y="260" width="100" height="14" rx="4" fill="var(--color-accent)" opacity="0.12"/>
-            <rect x="110" y="300" width="140" height="14" rx="4" fill="var(--color-accent)" opacity="0.1"/>
-            <rect x="110" y="330" width="120" height="14" rx="4" fill="var(--color-accent)" opacity="0.1"/>
-            <rect x="110" y="360" width="130" height="14" rx="4" fill="var(--color-accent)" opacity="0.1"/>
-            <!-- Main content -->
-            <rect x="310" y="90" width="400" height="40" rx="8" fill="var(--color-accent)" opacity="0.08"/>
-            <rect x="310" y="160" width="380" height="120" rx="12" fill="var(--color-accent)" opacity="0.06"/>
-            <rect x="710" y="160" width="380" height="120" rx="12" fill="var(--color-accent)" opacity="0.05"/>
-            <rect x="310" y="310" width="780" height="120" rx="12" fill="var(--color-accent)" opacity="0.04"/>
-            <!-- Breadcrumb -->
-            <rect x="310" y="100" width="60" height="12" rx="3" fill="var(--color-accent)" opacity="0.2"/>
-            <rect x="380" y="100" width="80" height="12" rx="3" fill="var(--color-accent)" opacity="0.15"/>
-            <rect x="470" y="100" width="100" height="12" rx="3" fill="var(--color-accent)" opacity="0.12"/>
+            <rect x="680" y="120" width="120" height="12" rx="3" fill="var(--color-accent)" opacity="0.2"/>
+            <rect x="680" y="148" width="110" height="10" rx="3" fill="var(--color-accent)" opacity="0.12"/>
+            <rect x="680" y="170" width="120" height="10" rx="3" fill="var(--color-accent)" opacity="0.12"/>
+            <rect x="680" y="192" width="100" height="10" rx="3" fill="var(--color-accent)" opacity="0.12"/>
+            <rect x="692" y="218" width="90" height="10" rx="3" fill="var(--color-accent)" opacity="0.08"/>
+            <rect x="692" y="240" width="80" height="10" rx="3" fill="var(--color-accent)" opacity="0.08"/>
+            <rect x="680" y="270" width="110" height="10" rx="3" fill="var(--color-accent)" opacity="0.12"/>
+            <rect x="680" y="292" width="100" height="10" rx="3" fill="var(--color-accent)" opacity="0.12"/>
+            <rect x="692" y="318" width="80" height="10" rx="3" fill="var(--color-accent)" opacity="0.08"/>
+            <rect x="692" y="340" width="90" height="10" rx="3" fill="var(--color-accent)" opacity="0.08"/>
+            <!-- Streamlined top bar -->
+            <rect x="820" y="56" width="320" height="40" rx="8" fill="var(--color-accent)" opacity="0.06"/>
+            <rect x="840" y="68" width="100" height="14" rx="4" fill="var(--color-accent)" opacity="0.1"/>
+            <circle cx="1100" cy="76" r="10" fill="var(--color-accent)" opacity="0.12"/>
+            <!-- Clean content area -->
+            <rect x="840" y="116" width="280" height="140" rx="10" fill="var(--color-accent)" opacity="0.06"/>
+            <rect x="840" y="276" width="280" height="160" rx="10" fill="var(--color-accent)" opacity="0.04"/>
           </svg>
         </div>
 
         <div class="case-content">
-          <h2>The Challenge</h2>
-          <p>Atlassian's product suite has grown significantly — from Jira and Confluence to include Loom, Trello, Bitbucket, Rovo, and more. With over 300,000 customers and offices across San Francisco, Mountain View, Austin, Bangalore, Tokyo, Manila, Sydney, and Amsterdam, the products enable teams to work together effectively across today's shifting workplace.</p>
-          <p>As the suite expanded through both organic growth and acquisitions, navigation patterns diverged across products. Users switching between tools encountered different navigation paradigms, creating cognitive overhead and reducing the sense of a unified platform. The challenge: create a cohesive navigation experience that ties the entire Atlassian ecosystem together — without disrupting the deeply embedded workflows that millions rely on daily.</p>
+          <h2>One Navigation for All Products</h2>
+          <p>Atlassian released Jira in 2002, with Confluence following in 2004. Since then, the product suite has grown significantly through both development and acquisition. As customers adopted multiple Atlassian products, the inconsistent navigation across products forced them to relearn the same tasks in different contexts. Finding work became a consistent pain point in user feedback.</p>
+          <p>On the engineering side, each product team had customised their navigation to quickly ship features and meet specific needs. While this helped teams move faster initially, the differences multiplied. Soon, simple updates required changes across multiple codebases, making even the smallest changes costly and complex. These fragmented codebases prevented us from creating the consistent experience our customers needed.</p>
+          <p>The solution: one navigation, one codebase. In October 2024, we unveiled the new navigation through an Early Access Programme to 6 key Atlassian products, significantly improving the experience that millions use every day.</p>
 
-          <h2>My Role</h2>
-          <p>As Lead Designer for the System of Work initiative, I own the end-to-end design of the navigation experience that connects all Atlassian products. This includes:</p>
+          <h2>Learning from the Past</h2>
+          <p>This wasn't our first attempt. In 2018, Atlassian redesigned the navigation using a one-size-fits-all approach — applying an identical navigation to every product. The results weren't what we hoped for. We couldn't address each product's unique needs. The key lesson: <strong>consistency doesn't mean everything has to be identical</strong>. There has to be a balance between consistency and flexibility.</p>
+
+          <h2>The Principles Behind the Pixels</h2>
+          <p>Before starting any design, we needed guiding principles to make sound decisions. We believe customers should be able to move seamlessly between products, getting more value from using them together. This belief drove three core principles:</p>
           <ul>
-            <li>Defining the navigation framework and interaction patterns that will scale across the full product suite</li>
-            <li>Collaborating with product designers embedded in each product to ensure the navigation integrates seamlessly with product-specific workflows</li>
-            <li>Working closely with engineering to navigate the technical complexities of a cross-product system</li>
-            <li>Presenting to and aligning senior stakeholders across multiple product lines</li>
-            <li>Balancing consistency and flexibility — each product has unique needs, but the whole must feel unified</li>
+            <li><strong>Maintain predictability and familiarity</strong> by repeating design patterns across all products wherever possible</li>
+            <li><strong>Allow user control and customisation</strong> to show and hide what's relevant and what's not</li>
+            <li><strong>Progressively disclose information</strong> to be approachable for new users while retaining the functionality needed by power users</li>
           </ul>
 
-          <!-- Process image -->
+          <h2>From Top to Side</h2>
+          <p>The most significant design decision was moving product navigation from the top bar to the sidebar. This unlocked key benefits:</p>
+          <ul>
+            <li><strong>Modern and familiar UI:</strong> Users today work across Google Workspace, Slack, and Microsoft Teams — all of which use a sidebar. By aligning with this industry pattern, we reduced cognitive load as users switch between tools.</li>
+            <li><strong>Move quickly between projects:</strong> The sidebar provides the vertical space and information density needed for a bird's-eye view of work that wasn't possible with dropdown menus in the top bar. A product manager can check ideas for an initiative, review dependencies in a release, and see incoming support feedback — all from the sidebar.</li>
+            <li><strong>Clear and streamlined top bar:</strong> With product navigation in the sidebar, the top bar is now consistently dedicated to universal actions like search and create, immediately discoverable no matter what product you're in.</li>
+          </ul>
+
+          <!-- Testing phases image -->
           <div class="case-image-full" aria-hidden="true">
             <svg viewBox="0 0 900 506" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect width="900" height="506" fill="var(--color-bg-card)"/>
-              <!-- Product ecosystem -->
-              <circle cx="450" cy="253" r="60" fill="var(--color-accent)" opacity="0.2"/>
-              <text x="450" y="258" fill="var(--color-accent)" font-size="12" text-anchor="middle" opacity="0.5">Navigation</text>
-              <!-- Surrounding products -->
-              <circle cx="300" cy="140" r="45" fill="var(--color-accent)" opacity="0.12"/>
-              <text x="300" y="144" fill="var(--color-accent)" font-size="11" text-anchor="middle" opacity="0.4">Jira</text>
-              <circle cx="600" cy="140" r="45" fill="var(--color-accent)" opacity="0.12"/>
-              <text x="600" y="144" fill="var(--color-accent)" font-size="11" text-anchor="middle" opacity="0.4">Confluence</text>
-              <circle cx="200" cy="300" r="45" fill="var(--color-accent)" opacity="0.12"/>
-              <text x="200" y="304" fill="var(--color-accent)" font-size="11" text-anchor="middle" opacity="0.4">Trello</text>
-              <circle cx="700" cy="300" r="45" fill="var(--color-accent)" opacity="0.12"/>
-              <text x="700" y="304" fill="var(--color-accent)" font-size="11" text-anchor="middle" opacity="0.4">Loom</text>
-              <circle cx="350" cy="410" r="45" fill="var(--color-accent)" opacity="0.12"/>
-              <text x="350" y="414" fill="var(--color-accent)" font-size="11" text-anchor="middle" opacity="0.4">Bitbucket</text>
-              <circle cx="550" cy="410" r="45" fill="var(--color-accent)" opacity="0.12"/>
-              <text x="550" y="414" fill="var(--color-accent)" font-size="11" text-anchor="middle" opacity="0.4">Rovo</text>
-              <!-- Connections -->
-              <line x1="390" y1="220" x2="330" y2="170" stroke="var(--color-accent)" stroke-width="1.5" opacity="0.15"/>
-              <line x1="510" y1="220" x2="570" y2="170" stroke="var(--color-accent)" stroke-width="1.5" opacity="0.15"/>
-              <line x1="390" y1="270" x2="240" y2="290" stroke="var(--color-accent)" stroke-width="1.5" opacity="0.15"/>
-              <line x1="510" y1="270" x2="660" y2="290" stroke="var(--color-accent)" stroke-width="1.5" opacity="0.15"/>
-              <line x1="430" y1="310" x2="370" y2="380" stroke="var(--color-accent)" stroke-width="1.5" opacity="0.15"/>
-              <line x1="470" y1="310" x2="530" y2="380" stroke="var(--color-accent)" stroke-width="1.5" opacity="0.15"/>
+              <!-- 5 phases -->
+              <rect x="50" y="100" width="140" height="140" rx="12" fill="var(--color-accent)" opacity="0.12"/>
+              <text x="120" y="160" fill="var(--color-accent)" font-size="11" text-anchor="middle" opacity="0.5">User Research</text>
+              <text x="120" y="180" fill="var(--color-accent)" font-size="10" text-anchor="middle" opacity="0.35">16 users</text>
+
+              <rect x="210" y="100" width="140" height="140" rx="12" fill="var(--color-accent)" opacity="0.16"/>
+              <text x="280" y="160" fill="var(--color-accent)" font-size="11" text-anchor="middle" opacity="0.5">Vision Lab</text>
+              <text x="280" y="180" fill="var(--color-accent)" font-size="10" text-anchor="middle" opacity="0.35">Prototype</text>
+
+              <rect x="370" y="100" width="140" height="140" rx="12" fill="var(--color-accent)" opacity="0.2"/>
+              <text x="440" y="160" fill="var(--color-accent)" font-size="11" text-anchor="middle" opacity="0.5">Chrome Plugin</text>
+              <text x="440" y="180" fill="var(--color-accent)" font-size="10" text-anchor="middle" opacity="0.35">160 users</text>
+
+              <rect x="530" y="100" width="140" height="140" rx="12" fill="var(--color-accent)" opacity="0.24"/>
+              <text x="600" y="160" fill="var(--color-accent)" font-size="11" text-anchor="middle" opacity="0.5">Low-code</text>
+              <text x="600" y="180" fill="var(--color-accent)" font-size="10" text-anchor="middle" opacity="0.35">Prototype</text>
+
+              <rect x="690" y="100" width="140" height="140" rx="12" fill="var(--color-accent)" opacity="0.28"/>
+              <text x="760" y="160" fill="var(--color-accent)" font-size="11" text-anchor="middle" opacity="0.5">Internal</text>
+              <text x="760" y="180" fill="var(--color-accent)" font-size="10" text-anchor="middle" opacity="0.35">Atlassians</text>
+
+              <!-- Arrows -->
+              <line x1="190" y1="170" x2="210" y2="170" stroke="var(--color-accent)" stroke-width="2" opacity="0.2"/>
+              <line x1="350" y1="170" x2="370" y2="170" stroke="var(--color-accent)" stroke-width="2" opacity="0.2"/>
+              <line x1="510" y1="170" x2="530" y2="170" stroke="var(--color-accent)" stroke-width="2" opacity="0.2"/>
+              <line x1="670" y1="170" x2="690" y2="170" stroke="var(--color-accent)" stroke-width="2" opacity="0.2"/>
+
+              <!-- Label -->
+              <text x="450" y="60" fill="var(--color-accent)" font-size="13" text-anchor="middle" opacity="0.4">Five phases of testing</text>
+
+              <!-- Bottom: 3 components -->
+              <text x="450" y="310" fill="var(--color-accent)" font-size="13" text-anchor="middle" opacity="0.4">Three components to rule them all</text>
+
+              <rect x="140" y="340" width="180" height="110" rx="10" fill="var(--color-accent)" opacity="0.1"/>
+              <rect x="170" y="370" width="120" height="16" rx="4" fill="var(--color-accent)" opacity="0.2"/>
+              <text x="230" y="430" fill="var(--color-accent)" font-size="11" text-anchor="middle" opacity="0.4">Menu Button</text>
+
+              <rect x="360" y="340" width="180" height="110" rx="10" fill="var(--color-accent)" opacity="0.1"/>
+              <rect x="390" y="360" width="120" height="14" rx="3" fill="var(--color-accent)" opacity="0.15"/>
+              <rect x="390" y="382" width="100" height="14" rx="3" fill="var(--color-accent)" opacity="0.12"/>
+              <rect x="390" y="404" width="110" height="14" rx="3" fill="var(--color-accent)" opacity="0.1"/>
+              <text x="450" y="430" fill="var(--color-accent)" font-size="11" text-anchor="middle" opacity="0.4">Flyout Menu</text>
+
+              <rect x="580" y="340" width="180" height="110" rx="10" fill="var(--color-accent)" opacity="0.1"/>
+              <rect x="610" y="365" width="120" height="12" rx="3" fill="var(--color-accent)" opacity="0.18"/>
+              <rect x="622" y="385" width="100" height="10" rx="3" fill="var(--color-accent)" opacity="0.12"/>
+              <rect x="622" y="403" width="90" height="10" rx="3" fill="var(--color-accent)" opacity="0.1"/>
+              <text x="670" y="430" fill="var(--color-accent)" font-size="11" text-anchor="middle" opacity="0.4">Expandable Menu</text>
             </svg>
           </div>
 
-          <h2>Approach</h2>
-          <p>The navigation redesign is structured around several core principles:</p>
+          <h2>Use, Iterate, Repeat</h2>
+          <p>We co-created with customers from day zero. The design evolved through five phases of testing:</p>
           <ul>
-            <li><strong>Product-aware, not product-specific:</strong> The navigation must understand context — which product you're in, what you're doing, and what you're likely to need next — without being locked to a single product's paradigm.</li>
-            <li><strong>Progressive disclosure:</strong> Surface the most relevant navigation paths while keeping the full breadth of the ecosystem accessible. Not every user needs every product visible at all times.</li>
-            <li><strong>Consistent mental model:</strong> Whether you're in Jira, Confluence, or Loom, the navigation patterns should feel familiar. Users should develop muscle memory that works across the suite.</li>
-            <li><strong>Accessibility-first:</strong> Navigation is foundational infrastructure — it must work flawlessly for keyboard navigation, screen readers, and across all input modalities.</li>
+            <li><strong>User research with 16 Jira users</strong> to learn how they navigate our products. Two clear needs emerged: users wanted to customise their navigation and needed better ways to find frequent items — which could potentially be solved by Starred and Recent.</li>
+            <li><strong>Vision Lab prototyping</strong> — since static design tools can't capture navigation's full complexity, we prototyped with Atlassian's internal prototyping tool to validate complex interactions like drag-and-drop and accordion panels.</li>
+            <li><strong>Chrome plugin with 160 users</strong> from a wide range of organisations and user types. Users loved the customisation options so much they wanted more — personalised project navigation and easier ways to hide sidebar items.</li>
+            <li><strong>Low-code prototype</strong> to test refined designs. We discovered that while settings were initially harder to find, the location made sense once discovered, matching patterns in other tools. We decided to focus on onboarding users to settings locations.</li>
+            <li><strong>Internal testing with Atlassians</strong> — key feedback around the discoverability of the sidebar collapse pattern. We quickly tested options and shipped the one that performed best.</li>
           </ul>
 
-          <h2>Ongoing Impact</h2>
-          <p>This project is currently in progress. The navigation redesign touches every Atlassian product and requires deep coordination across product, design, and engineering teams globally. It represents one of the most significant UX infrastructure investments Atlassian has undertaken — creating a unified experience layer that ties together tools used by hundreds of thousands of organisations worldwide.</p>
+          <h2>Three Components to Rule Them All</h2>
+          <p>When we audited the product suite, we discovered just how fragmented navigation had become. Each product team had built custom components, resulting in hundreds of components and <strong>23 major inconsistencies</strong> between products. Through focused design sprints, we mapped overlapping components and discovered something surprising — most navigation needs can be met with just three reusable components:</p>
+          <ul>
+            <li><strong>Menu Button</strong> — the core clickable navigation element</li>
+            <li><strong>Flyout Menu</strong> — for expanding contextual options</li>
+            <li><strong>Expandable Menu</strong> — for hierarchical navigation with progressive disclosure</li>
+          </ul>
+          <p>The power lies in their flexibility. Each component starts with required properties, but optional properties make them customisable. Need more context? Add a description. Want quick actions on hover? Add the actions property. Need to show it's expandable? Add a chevron indicator. This modular approach handles hundreds of navigation patterns with just three base components.</p>
+
+          <h2>Sweating the Details</h2>
+          <p>Navigation isn't just about moving between places — it's about understanding how everything fits together. The old navigation relied heavily on labels to show relationships and hierarchy, creating visual clutter.</p>
+          <p>Using design system spacing tokens, we built indentation directly into the components. But during internal testing, we discovered an unintended consequence: navigation items were getting truncated on smaller screens. The indentation showed hierarchy, but at the cost of readability.</p>
+          <p>Because we had built indentation into design tokens, we could adjust the entire system at once. With a single update to the spacing tokens, we found the sweet spot: a more compact indentation that maintained clear hierarchy while improving readability across all screen sizes.</p>
+
+          <h2>Built for the Future</h2>
+          <p>The new navigation is built on a modern tech stack with design system primitives, including built-in support for accessibility and RTL languages. Changes can be made once and applied everywhere.</p>
+          <p>To drive adoption, we created a navigation library as the single source of truth — including a Figma spec template guiding designers through accessibility, responsiveness, empty states, and content design, plus a component library with sticker sheets, implementation videos, and clear usage guidelines.</p>
+
+          <div class="case-results">
+            <div class="result-card">
+              <span class="result-number">6</span>
+              <span class="result-label">Products launched in EAP</span>
+            </div>
+            <div class="result-card">
+              <span class="result-number">23→3</span>
+              <span class="result-label">Major inconsistencies resolved into 3 components</span>
+            </div>
+            <div class="result-card">
+              <span class="result-number">160+</span>
+              <span class="result-label">External users co-created with</span>
+            </div>
+            <div class="result-card">
+              <span class="result-number">5</span>
+              <span class="result-label">Phases of iterative testing</span>
+            </div>
+          </div>
+
+          <h2>The Team</h2>
+          <p>This was a team effort — designed alongside Brona O'Connor, Richard Sneesby, Bryan Ye, Tamarah Walsh, Eric Auld, Tarra van Amerongen, and Varsha Patel.</p>
 
           <!-- Navigation -->
           <nav class="case-nav" aria-label="Case study navigation">
